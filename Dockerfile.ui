@@ -17,6 +17,7 @@ ENV MYSQL_USR root \
 
 COPY views /go/bin/views
 COPY static /go/bin/static
+COPY static/i18n/locale_en-US.ini /go/bin/static/i18n/locale_.ini
 COPY favicon.ico /go/bin/favicon.ico
 COPY Deploy/jsminify.sh /tmp/jsminify.sh
 
